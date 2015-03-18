@@ -1,0 +1,52 @@
+//12/03/2015
+//NodeJs
+/******************/
+
+//Jade es un motor de plantillas que permite generar HTML con una 
+//sintaxis compacta y está basado en Haml.
+
+//Nodemon se encarga de monitorear el codigo de la aplicación para que, si algo cambiase, 
+//reiniciar automáticamente Node
+
+//Dentro de Express existen algunas funiones como setting, que son parámetros de configuración y 
+//se establecen con el parámetro app.setting
+
+//Modulos middleware
+//Bodyparser, facilita el acceso al cuerpo de las peticiones, tanto si son POST de formularios 
+//como JSON
+
+//methodOverwritte, permite utilizar un tag input con un type hidden para modificar el método
+//http de la petición
+
+//routes, encargado de gestionar las rutas.
+
+//static, permite servir contenido estático como por ejemplo css, imagenes y scripts del lado cliente
+
+//Jade utiliza la indentación para crear el esquema del documento en lugar de emplear
+//tags de inicio y cierre
+
+//Las plantillas de Jade pueden recibir información externa a la hora de generarse,
+//también se puede iterar sobre listas de datos usando la construcción each
+//Jade soporta string interpolation, esto se utiliza para referenciar las variables #{variable}
+
+//Para añadir datos a las vistas se utiliza app.get ('/', routes.index);
+//Esto implica que cuando se accede a la raíz de la aplicación se ejecute el método index definido
+//por el objeto routes
+//El objeto routes es una importación del archivo routes/index.js en el cual se exporta
+//la función index, lo que le estamos diciendo a Express es que cuando llegue una petición GET
+//a la ruta /, use la función index para generar la respuesta
+
+//package.JSON
+{
+	"name": "nombre_del_proyecto",
+	"version": "version_del_proyecto",
+	"private": "true",
+	"main": "app.js",
+	"dependencies": {
+			"express": "4.0",
+			"nib": "1.0.4", //nib es una extensión para Stylus
+			"stylus": "version",
+			"jade": "version"
+
+	}
+}
